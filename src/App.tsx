@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import TopNavbar from "./shared/partials/topnavbar";
+import SideNavbar from "./shared/partials/sidemenu";
+import Footer from "./shared/partials/footer";
+import DataArea from "./shared/partials/dataare";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <TopNavbar />
+      <div className=" page-body-wrapper">
+        <SideNavbar />
+        <DataArea />
+      </div>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
