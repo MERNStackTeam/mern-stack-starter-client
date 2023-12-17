@@ -1,4 +1,5 @@
 import React from "react";
+import BasicExampleDataGrid from '../datagrid/datagrid'
 
 const DataArea: React.FC = () => {
   return (
@@ -6,6 +7,7 @@ const DataArea: React.FC = () => {
       <div className="main-panel">
         <div className="content-wrapper">
           Componet is working
+          <BasicExampleDataGrid/>
         </div>
       </div>
   );
