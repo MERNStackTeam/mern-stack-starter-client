@@ -29,9 +29,9 @@ export default function BasicExampleDataGrid() {
 
   return (
     <div >
-      <div style={{ marginBottom: 10 }}>
+      {/* <div style={{ marginBottom: 10 }}>
         <input type="text" placeholder="Search..." value={searchQuery} onChange={handleSearch} />
-      </div>
+      </div> */}
       <div style={{ height: 600, width: '100%' }}>
         <DataGrid
           rows={filteredData}

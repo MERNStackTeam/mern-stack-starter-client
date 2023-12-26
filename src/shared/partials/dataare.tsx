@@ -5,10 +5,10 @@ const DataArea: React.FC = () => {
   return (
 
       <div className="main-panel">
-        <div className="content-wrapper">
-          Componet is working
+        <div className="content-wrapper" style={{backgroundColor:'white'}}>
+        
           <BasicExampleDataGrid/>
-        </div>
+          </div>
       </div>
   );
 };

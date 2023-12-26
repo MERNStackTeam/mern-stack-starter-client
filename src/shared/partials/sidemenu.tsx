@@ -12,7 +12,7 @@ const SideNavbar: React.FC = () => {
           <span className="menu-title">Dashboard</span>
         </a>
       </li>
-      <li className="nav-item">
+    {/*   <li className="nav-item">
         <a className="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
           <i className="mdi mdi-circle-outline menu-icon"></i>
           <span className="menu-title">UI Elements</span>
@@ -24,8 +24,51 @@ const SideNavbar: React.FC = () => {
             <li className="nav-item"> <a className="nav-link" >Typography</a></li>
           </ul>
         </div>
+      </li> */}
+      <li className="nav-item">
+        <a className="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+          <i className="mdi mdi-screwdriver menu-icon"></i>
+          <span className="menu-title">Control Panel</span>
+          <i className="menu-arrow"></i>
+        </a>
+        <div className="collapse" id="ui-basic">
+          <ul className="nav flex-column sub-menu">
+            <li className="nav-item"> <a className="nav-link" >User</a></li>
+            <li className="nav-item"> <a className="nav-link" >Roles</a></li>
+            <li className="nav-item"> <a className="nav-link" >User Roles</a></li>
+            <li className="nav-item"> <a className="nav-link" >Menus</a></li>
+            <li className="nav-item"> <a className="nav-link" >Change Password</a></li>
+          </ul>
+        </div>
       </li>
       <li className="nav-item">
+        <a className="nav-link" data-bs-toggle="collapse" href="#ui-masters" aria-expanded="false" aria-controls="ui-masters">
+          <i className="mdi mdi-face-profile menu-icon"></i>
+          <span className="menu-title">Masters</span>
+          <i className="menu-arrow"></i>
+        </a>
+        <div className="collapse" id="ui-masters">
+          <ul className="nav flex-column sub-menu">
+            <li className="nav-item"> <a className="nav-link" >Master 1</a></li>
+            <li className="nav-item"> <a className="nav-link" >Master 2</a></li>
+            <li className="nav-item"> <a className="nav-link" >Master 3</a></li>
+          </ul>
+        </div>
+      </li>
+      <li className="nav-item">
+        <a className="nav-link" data-bs-toggle="collapse" href="#ui-settings" aria-expanded="false" aria-controls="ui-settings">
+          <i className="mdi-settings mdi menu-icon"></i>
+          <span className="menu-title">Settings</span>
+          <i className="menu-arrow"></i>
+        </a>
+        <div className="collapse" id="ui-settings">
+          <ul className="nav flex-column sub-menu">
+            <li className="nav-item"> <a className="nav-link" >Appearance</a></li>
+            <li className="nav-item"> <a className="nav-link" >Email Config</a></li>
+          </ul>
+        </div>
+      </li>
+     {/*  <li className="nav-item">
         <a className="nav-link" href="pages/forms/basic_elements.html">
           <i className="mdi mdi-view-headline menu-icon"></i>
           <span className="menu-title">Form elements</span>
@@ -70,7 +113,7 @@ const SideNavbar: React.FC = () => {
           <i className="mdi mdi-file-document-box-outline menu-icon"></i>
           <span className="menu-title">Documentation</span>
         </a>
-      </li>
+      </li> */}
     </ul>
   </nav>
   );
