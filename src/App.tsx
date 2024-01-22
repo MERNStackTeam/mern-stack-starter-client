@@ -5,16 +5,15 @@ import Footer from "./shared/partials/footer";
 import DataArea from "./shared/partials/dataare";
 
 const App: React.FC = () => {
-  return (
-    <div className="app">
-      <TopNavbar />
-      <div className=" page-body-wrapper">
-        <SideNavbar />
-        <DataArea />
-      </div>
-      <Footer />
-    </div>
-  );
+    return (
+        <div className="app">
+            <TopNavbar/>
+            <div className=" page-body-wrapper">
+                <SideNavbar/>
+                <DataArea/>
+            </div>
+            <Footer/>
+        </div>
+    );
 };
-
 export default App;
