@@ -1,8 +1,12 @@
 import Topnavbar from "../shared/partials/topnavbar";
 import Sidebar from "../shared/partials/sidebar";
 import Footer from "../shared/partials/footer";
+import BasicExampleDataGrid from "../shared/datagrid/datagrid";
+import { ToastContainer, toast } from "react-toastify";
 
 function layout() {
+
+  const notify = () => toast.success("Toaster Check!");
   return (
     <div className="wrapper">
       <Topnavbar />
@@ -29,7 +33,12 @@ function layout() {
           <div className="container-fluid">
             <div className="row">
               <div className="col-lg-12">
-                <div className="card">data here</div>
+                <div className="card">
+                <button style={{'width':'100px'}} className="btn btn-success" onClick={notify}>Notify!</button> <br/>
+                 <ToastContainer />
+
+                <BasicExampleDataGrid/>
+                </div>
               </div>
             </div>
           </div>
